@@ -7,7 +7,15 @@ import { auth } from '../../firebase/firebase.utils';
 
 import { ReactComponent as Logo } from '../../assets/crown.svg';
 
-import CartIcon from '../cart-icon-in-header/cart-icon.component'
+import CartIcon from '../cart-icon-in-header/cart-icon.component';
+
+import {createStructuredSelector} from 'reselect';
+
+import {selectHidden} from '../../redux/cart/cart.selectors.js';
+
+import {selectCurrentUser} from '../../redux/user/user.selector.js'
+
+
 
 import './header.styles.scss';
 
@@ -38,9 +46,9 @@ const Header = ({ currentUser, hidden }) => (
   </div>
 );
 //nicher state ta root reducer ar current user hocche header er prop
-const mapStateToProps = ({user: {currentUser}, cart:{hidden}}) => ({
-  currentUser,
-  hidden
+const mapStateToProps = createStructuredSelector({
+  currentUser: selectCurrentUser,
+  hidden: selectHidden
 });
 
 export default connect(mapStateToProps)(Header);
