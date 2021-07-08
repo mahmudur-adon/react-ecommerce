@@ -5,7 +5,6 @@ import {selectCartItems} from '../../redux/cart/cart.selectors.js'
 import CustomButton from "../custom-button/custom-button.component";
 import CartItem from "../cart-item/cart-item.component";
 import { createStructuredSelector } from "reselect";
-import CheckoutPage from '../../pages/checkout/checkout.component';
 import {toggleCartHidden} from '../../redux/cart/cart.actions.js'
 
 import "./cart-dropdown.styles.scss";
