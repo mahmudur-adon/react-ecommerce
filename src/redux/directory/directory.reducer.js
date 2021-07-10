@@ -1,36 +1,41 @@
 const INITIAL_STATE = {
   sections: [
     {
-      title: "hats",
-      imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
+      title: "tablet",
+      imageUrl:
+        "https://images.unsplash.com/photo-1527698266440-12104e498b76?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
       id: 1,
-      linkUrl: "hats",
+      linkUrl: "shop/tablet",
     },
     {
-      title: "jackets",
-      imageUrl: "https://i.ibb.co/px2tCc3/jackets.png",
+      title: "console",
+      imageUrl:
+        "https://images.unsplash.com/photo-1518908336710-4e1cf821d3d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80",
       id: 2,
-      linkUrl: "shop/jackets",
+      linkUrl: "shop/console",
     },
     {
-      title: "sneakers",
-      imageUrl: "https://i.ibb.co/0jqHpnp/sneakers.png",
+      title: "software",
+      imageUrl:
+        "https://images.unsplash.com/photo-1617777938240-9a1d8e51a47d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=889&q=80",
       id: 3,
-      linkUrl: "shop/sneakers",
+      linkUrl: "shop/software",
     },
     {
-      title: "womens",
-      imageUrl: "https://i.ibb.co/GCCdy8t/womens.png",
+      title: "desktop",
+      imageUrl:
+        "https://images.unsplash.com/photo-1426024120108-99cc76989c71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=753&q=80",
       size: "large",
       id: 4,
-      linkUrl: "shop/womens",
+      linkUrl: "shop/desktop",
     },
     {
-      title: "mens",
-      imageUrl: "https://i.ibb.co/R70vBrQ/men.png",
+      title: "laptop",
+      imageUrl:
+        "https://images.unsplash.com/photo-1575024357670-2b5164f470c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
       size: "large",
       id: 5,
-      linkUrl: "shop/mens",
+      linkUrl: "shop/laptop",
     },
   ],
 };
