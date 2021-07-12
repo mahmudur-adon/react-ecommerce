@@ -2,7 +2,8 @@ import React from 'react';
 import { Switch, Route,Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import {createStructuredSelector} from 'reselect';
-import CheckoutPage from './pages/checkout/checkout.component.jsx'
+import CheckoutPage from './pages/checkout/checkout.component.jsx';
+import About from './pages/contact/contact.component'
 
 import './App.css';
 
@@ -60,6 +61,7 @@ class App extends React.Component {
             }
           />
           <Route exact path="/checkout" component={CheckoutPage} />
+          <Route exact path="/contact" component={About} />
         </Switch>
         <Footer />
       </div>

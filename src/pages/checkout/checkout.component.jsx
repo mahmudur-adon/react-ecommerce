@@ -9,6 +9,7 @@ import {selectCartTotal} from '../../redux/cart/cart.selectors.js';
 
 import CheckoutItem from '../../components/checkout-item/checkout-item.component'
 import './checkout.styles.scss';
+import StripeCheckOutButton from '../../components/stripe-button/stripe-button.component.js'
 
 const CheckoutPage = ({ check, total }) => (
   <div className="checkout-page">
@@ -29,10 +30,16 @@ const CheckoutPage = ({ check, total }) => (
         <span>Remove</span>
       </div>
     </div>
-    {check.map((cartItem) => (<CheckoutItem key={cartItem.id} cartItem={cartItem}/>
+    {check.map((cartItem) => (
+      <CheckoutItem key={cartItem.id} cartItem={cartItem} />
     ))}
     <div className="total">
       <span>TOTAL: ৳{total}</span>
+    </div>
+    <StripeCheckOutButton price={total} />
+    <div className="test-warning">
+      *Please use 4242424242424242 - Exp: any future date -<br /> cvv: any 3
+      digit number to test the payment system*
     </div>
   </div>
 );
